@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@font-face{
+    font-family: "Android";
+    src: url("../fonts/idroid.otf") format('opentype');
+}
+:root{
+    /*cores*/
+    --cor00: #ffffff;
+    --cor01: #83e1ad;
+    --cor02: #3ddc84;
+    --cor03: #2fa866;
+    --cor04: #1a5c37;
+    --cor05: #063d1e;
+    --cor06: #036868;
+    /*sombras*/
+    --sombra01: 0px 0px 10px rgb(3, 3, 3);
+    --sombra02: 0px 5px 5px rgba(44, 44, 44, 0.418);
+    /*fonts*/
+    --fontPadrao:'Open Sans', sans-serif;
+    --fontAndroid: "Android";
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontPadrao);
+}
+body{
+    background-color: var(--cor02) ;
+}
+
+/*<----------HEADER----------------------------------------------------------------->*/
+header{
+    background-image: linear-gradient(to top, var(--cor05), var(--cor03) );
+    text-align: center;
+    color: var(--cor00);
+    padding: 20px 0 0 0;
+    min-height: 150px;
+    text-shadow: var(--sombra01);
+}
+header > h1{
+    text-shadow: var(--sombra01);
+    margin: 0 15px 20px;
+}
+header > p{
+    text-shadow: var(--sombra01);
+    max-width: 600px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+nav{
+    background-color: var(--cor05);
+    box-shadow: var(--sombra02);
+    padding: 5px 15px 15px 15px;
+}
+nav > a{
+    color: var(--cor00);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.1s;
+}
+nav > a:hover{
+    background-color: var(--cor06);
+    border-radius: 3px;
+}
+/*<----------FIM-DO-HEADER---------------------------------------------------------->*/
+
+/*centralização-de-imagens ----------------------------------------*/
+.imgWidth{
+    width: 100%;
+}
+.imgWidthPq{
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+/*fim-da-centralização-de-imagens-------------------------------------------------------*/
+div.videoYTB{
+    background-color: var(--cor05);
+    margin: 0 -20px 30px -20px;
+    position: relative;
+    padding-bottom: 59%;
+}
+div.videoYTB > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+/*configuração-do-main------------------------------------------------------------------*/
+main{
+    padding: 20px;
+    background-color: var(--cor00);
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0px auto 20px;
+    box-shadow: var(--sombra01);
+    border-radius: 0px 0px 10px 10px;
+}
+main p{
+    margin: 20px 0;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.9em;
+    font-size: 1.1em;
+}
+main strong{
+    color: var(--cor04);
+    font-weight: bolder;
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor04);
+    text-decoration: underline var(--cor05);
+}
+main a::after{
+    content: "\00A0\1f517";
+
+}
+article > h1{
+    font-family: var(--fontAndroid);
+    color: var(--cor04);
+}
+article > h2{
+    font-family: var(--fontAndroid);
+    background-image: linear-gradient(to right, var(--cor01), var(--cor00));
+    color: var(--cor04);
+    text-indent: 5px;
+}
+/*conteúdo-do-aside--------------------------------------------*/
+aside{
+    background-color: var(--cor02);
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: var(--sombra01);
+}
+aside > h3{
+    background-color: var(--cor04);
+    margin: -10px -10px 0 -10px;
+    color: white;
+    border-radius: 3px 3px 0 0;
+    padding: 10px;
+}
+aside > ul{
+    list-style-type: "\2714\00A0\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+/*<----------FOOTER---------------------------------------------------------------->*/
+footer{
+    background-color: var(--cor05);
+    text-align: center;
+    color: var(--cor00);
+    padding: 15px;
+    font-size: 1em;
+}
+footer > p > a{
+    color: var(--cor00);
+    font-size: 1.1em;
+    transition: 0.1s;
+    padding: 5px;
+}
+footer > p > a:hover{
+    background-color: var(--cor06);
+    border-radius: 3px;
+}

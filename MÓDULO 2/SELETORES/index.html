@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        /*Em HTML: id=""; Em CSS: #id{}
+        id: para apenas uma tag.
+        class: para múltiplas tags.
+        Pode usar mais de uma class em uma tag(observar exemplos nas tags h2, que possuem as tags h2s e destaque*/
+        body{
+            background-attachment: fixed;
+            background-image: linear-gradient(59deg, #372772, #12130F);
+        }
+        *{
+            font-family: sans-serif;
+        }
+        h1#principalHTML{
+            color: #e63b3b;
+        }
+        h1#principalCSS{
+            color: rgb(0, 166, 231);
+        }
+        .h2s{
+            color: white;
+        }
+        .ps{
+            color: rgb(255, 255, 139);
+        }
+        .destaque{
+            background-color: rgb(1, 68, 168);
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principalHTML">Aprendendo HTML</h1>
+    <h2 class="h2s destaque">HTML Básico</h2>
+    <p class="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat id accusantium eaque maxime laudantium sequi veritatis optio, nulla dolores doloremque dolore! Eaque quae ratione recusandae fuga delectus laudantium excepturi.</p>
+    <h2 class="h2s">HTML Intermediário</h2>
+    <p class="ps">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi deserunt eligendi voluptatibus excepturi iusto optio voluptates illo. Quis quam corrupti dolor, pariatur laboriosam soluta doloribus sequi dolores hic accusantium. Error!</p>
+    <h2 class="h2s">HTML Avançado</h2>
+    <p class="ps">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aspernatur libero totam sequi quis consectetur adipisci unde esse error. Rem libero, explicabo laudantium tempore expedita quae vel quidem maiores. Magni.</p>
+
+    <h1 id="principalCSS">Aprendendo CSS</h1>
+    <h2 class="h2s destaque">CSS Básico</h2>
+    <p class="ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellat id accusantium eaque maxime laudantium sequi veritatis optio, nulla dolores doloremque dolore! Eaque quae ratione recusandae fuga delectus laudantium excepturi.</p>
+    <h2 class="h2s">CSS Intermediário</h2>
+    <p class="ps">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi deserunt eligendi voluptatibus excepturi iusto optio voluptates illo. Quis quam corrupti dolor, pariatur laboriosam soluta doloribus sequi dolores hic accusantium. Error!</p>
+    <h2 class="h2s">CSS Avançado</h2>
+    <p class="ps">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aspernatur libero totam sequi quis consectetur adipisci unde esse error. Rem libero, explicabo laudantium tempore expedita quae vel quidem maiores. Magni.</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        h1, h2{
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        @font-face{
+            font-family: 'Retro Cool';
+            src: url('fonts/RetroCool-Regular.otf') format('opentype'), url('fonts/RetroCool-Regular.ttf') format('truetype');
+        }
+        /*
+            o @font-face pede o caminho até a fonte baixada, o formato dela e me pede para criar uma tag de font-family. /// 
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+        #fontBaix{
+            font-family: 'Retro Cool';
+        }
+    </style>
+</head>
+<body>
+    <h1>Fontes externas</h1>
+    <h2>Fontes externas NÃO-baixadas</h2>
+    <p style="font-family: monospace;">Para utilizar uma fonte externa, é necessário ir para o site Google Fonts e copiar o import e colar no documento CSS. No site também mostra o código para inserir a font-family no CSS</p>
+    
+    <h2 id="fontBaix">Fontes externas baixadas</h2>
+    <p id="fontBaix">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio eaque laudantium ut incidunt hic quia, adipisci corporis fugiat. Ab vitae cum natus ratione voluptate nihil, sit ducimus quas cumque voluptatibus.</p>
+</body>
+</html>

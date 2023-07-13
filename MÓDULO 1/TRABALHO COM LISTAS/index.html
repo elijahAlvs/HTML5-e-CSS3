@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho com listas</title>
+    <style>
+        *{
+            font-family:monospace;
+            background-color: rgb(118, 8, 221);
+            color:rgb(248, 239, 228);
+        }
+        marquee{
+            color: rgb(251, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalho com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <pre>
+        "ol (ordered lists)" para criação de listas ordenadas,
+        onde a sequência importa.
+        "li (list items)" para listar itens.
+    </pre>
+    <ol> <!-- Possui a propriedade type: 1 / A / a / I / i .......... Possui também a propriedade start: numero do elemento. Ex: 4 (a lista comecará pelo numero 4). Ex2: 5 para um valor de letra exibirá a letra E pois é a quinta do alfabeto -->
+        <li>Comes</li>
+        <li>Bebes</li>
+        <li>Dormes</li>
+        <li>Chores</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul> <!-- types: disc / circle / square-->
+        <li>valorant</li>
+        <li>minecraft</li>
+        <li>brawl stars</li>
+        <li>genshin impact</li>
+    </ul>
+    <pre>
+        "ul (unordered lists)" para criação de listas não ordenadas,
+        onde a sequência não importa.
+        "li (list items)" para listar itens.
+    </pre>
+    <hr>
+    <marquee behavior="" direction="right">Teste de marquee</marquee>
+    <hr>
+
+    <h2>Juntando listas</h2>
+    <h3>Meus jogos favoritos em lista ol</h3>
+    <ol>
+        <li>FPS</li>
+        <ol>
+            <li>Valorant</li>
+            <li>Fortnite</li>
+            <li>Free Fire</li>
+        </ol>
+        <li>Lógica</li>
+        <ol>
+            <li>Sudoku</li>
+            <li>Paciência</li>
+            <li>Xadrez</li>
+        </ol>
+    </ol>
+    <h3>Meus jogos favoritos em lista ul</h3>
+    <ol>
+        <li>FPS</li>
+        <ul>
+            <li>Valorant</li>
+            <li>Fortnite</li>
+            <li>Free Fire</li>
+        </ul>
+        <li>Lógica</li>
+        <ul>
+            <li>Sudoku</li>
+            <li>Paciência</li>
+            <li>Xadrez</li>
+        </ul>
+    </ol>
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>HTML</dt><!--Termo-->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd><!--Descrição-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
+</html>

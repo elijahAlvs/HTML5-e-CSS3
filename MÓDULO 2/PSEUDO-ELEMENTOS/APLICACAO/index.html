@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação Pseudo-elementos</title>
+    <style>
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children
+        */
+        *{
+            font-family: sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            color: blueviolet;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        a::before{
+            content:"[Texto antes]";
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+            font-size: smaller;
+        }
+        a::after{
+            content: "[Texto depois]";
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(128, 127, 127);
+            font-size: smaller;
+        }
+        /*
+        Pseudo-classes:
+        - visited: os links que já foram usados sofrerão formatação.
+        - hover: o elemento que está abaixo do mouse sofrerá formatação.
+        - active: o link soferá formatação enquanto estiver sendo pressionado.
+
+        Pseudo-elements: 
+        - before: antes de tudo.
+        - after: depois de tudo
+        */
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/channel/UCP_n5ztbDdzXwTGoDrcKRhg" target="_blank">Canal CPU FF</a></li>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub - Guanabara</a></li>
+        <li><a href="https://www.youtube.com/@orochidois1692" target="_blank">Canal do Pisca</a></li>
+        <li><a href="https://discord.gg/wCdFwDnt" target="_blank">Discord</a></li>
+    </ul>
+</body>
+</html>

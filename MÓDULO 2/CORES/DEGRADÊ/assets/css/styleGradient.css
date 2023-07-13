@@ -1,0 +1,63 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+#ulGradient li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px;
+}
+#ulGradient li div{
+    width: 200px;
+    height: 100px;
+}
+#ulGradient p{
+    text-align: center;
+}
+#c1 div{
+    background-image: linear-gradient(to right, #B2E4DB, #0F084B); 
+}
+#c1 p{
+    color: white;
+    font-size: 18px;
+}
+#c2 div{
+    background-image: linear-gradient(to top, #B2E4DB, #0F084B, #F71735);
+}
+#c2 p{
+    color: white;
+    font-size: 18px;
+}
+
+#c3 div{
+    background-image: linear-gradient(to left, #B2E4DB, #0F084B, #F71735, #726E97);
+}
+#c3 p{
+    color: white;
+    font-size: 18px;
+}
+
+#c4 div{
+    background-image: linear-gradient(to bottom, #B2E4DB, #0F084B, #F71735, #726E97, #C6F91F);
+}
+#c4 p{
+    color: white;
+    font-size: 18px;
+}
+#c5 div{
+    background-image: linear-gradient(-45deg, #B2E4DB, #0F084B, #F71735, #726E97, #C6F91F);
+}
+#c5 p{
+    color: white;
+    font-size: 18px;
+}
+#c6 div{
+    background-image: radial-gradient(circle, #B2E4DB, #0F084B, #F71735, #726E97, #C6F91F);
+}
+#c6 p{
+    color: white;
+    font-size: 18px;
+}

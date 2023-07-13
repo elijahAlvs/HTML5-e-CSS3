@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio</title>
+</head>
+<body>
+    <h1>Áudios</h1>
+    <h2>Aprendendo a reproduzir áudios</h2>
+    <p>Vamos reproduzir o nosso primeiro áudio em HTML5</p>
+    <audio src="assets/midias/audio/TheKidLAROI-LoveAgain-320kbps.mp3" controls></audio>
+
+    <h2>Mais opções</h2>
+    <p>Outras formas de reproduzir um áudio</p>
+    <audio preload="" controls loop>
+        <!-- controls: mostra os controles / autoplay: inicia o audio automaticamente, porém pode ser incompativel com o navegador / loop: ao finalizar o audio, ele recomeça-->
+        <source src="assets/midias/audio/TheKidLAROI-LoveAgain-320kbps.mp3" type="audio/mpeg"><!--MP3-->
+        <source src="assets/midias/audio/TheKidLAROI-LoveAgain-320kbps.ogg" type="audio/ogg"><!--OGG-->
+        <source src="assets/midias/audio/TheKidLAROI-LoveAgain-320kbps.wav" type="audio/wav"><!--WAV-->
+        <!--Coloquei vários sources porque se não carregar um por conta de alguma incompatibilidade com o navegador, carrega outro. Aconselhável sempre usar os formatos: MP3 / OGG / WAV.
+        A ordem de execução é do primeiro(mais ao topo) ao último(mais abaixo).-->
+    </audio>
+
+</body>
+</html>

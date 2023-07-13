@@ -1,0 +1,1 @@
+Se você está lendo este documento, significa que o desenvolvedor do site não cometeu erros no código.

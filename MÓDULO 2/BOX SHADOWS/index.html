@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadows</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            background-color: rgb(92, 92, 92);
+            box-shadow: 1px 1px 1px 1px black;
+            /*Shorthand = box-shadow: 1px(deslocamento horizontal) 1px(deslocamento vertical) 1px(blur) 1px(spread) black(cor da sombra).
+            Também é possivel abrir o DevTools, ir para box-shadow e utilizar a ferramenta*/
+        }
+        header>h1{
+            color: whitesmoke;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cabeçalho</h1>
+    </header>
+</body>
+</html>

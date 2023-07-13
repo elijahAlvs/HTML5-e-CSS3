@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem dinâmica</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente usar zoom-in e zoom-out em seu navegador para usufruir da dinamicidade das imagens.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="assets/images/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="assets/images/foto-m.png" type="image/png">
+        <img src="assets/images/foto-g.png" alt="Foto Grande">
+    </picture>
+</body>
+</html>

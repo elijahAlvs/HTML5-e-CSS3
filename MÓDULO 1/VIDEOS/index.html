@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Inserindo vídeos</h1>
+    <p>Este vídeo está hospedado em meu próprio servidor.</p>
+    <video src="assets/midias/videos/webm/castle-island.webm" width="720px" controls poster="assets/midias/images/thumbs/thumb-island.png"></video>
+
+    <p>Agora vamos utilizar de outra forma para inserir um vídeo</p>
+    <video controls width="720px" poster="assets/midias/images/thumbs/thumb-island.png"><!--controls: mostra os controles para que o video possa ser reproduzido, pausado, etc / poster: mostra uma imagem de thumbnail / width: controla o tamanho do vídeo-->
+        <source src="assets/midias/videos/mp4/castle-island.mp4" type="video/mp4"><!--video mp4-->
+        <source src="assets/midias/videos/m4v/castle-island.m4v" type="video/mp4"><!--video m4v (o formato está certo em "type", pois elas mp4 e m4v são da mesma familia)-->
+        <source src="assets/midias/videos/webm/castle-island.webm" type="video/webm"><!--video webm-->
+        <p>Seu navegador não possui compatibilidade com reprodução de vídeos, tente <a href="assets/midias/videos/mp4/castle-island.mp4">clicar aqui</a> para carregar.</p><!--opção disponível caso o navegador do usuário seja incompatível com todos os formatos de vídeo disponíveis-->
+    </video>
+    <h2>Youtube</h2>
+    <p>Incorporando vídeos do Youtube</p>
+    <iframe width="720" height="400" src="https://www.youtube.com/embed/aHg5-0mFvkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><!--Diferente do método onde eu hospedo os vídeos, quando usamos um servidor de vídeo não consumimos banda larga, logo não pesa no bolso do cliente. Para inserir este código aqui, eu fui em um vídeo do youtube, cliquei em compartilhar e logo em seguida cliquei em "incorporar", que me mostrou um código e eu inseri-o aqui.-->
+
+    <!--Para sites onde o vídeo não possa ser perpetuado, como cursos, podemos usar a plataforma vimeo, pois ela possui configurações para tal. Para inserir no código, é o mesmo esquema que o youtube-->
+</body>
+</html>

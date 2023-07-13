@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elementos</title>
+    <style>
+        .div0{
+            display: inline-block;
+            background-color: whitesmoke;
+            border: 1px solid black;
+            /*shorthand do border: 1px(largura) solid(tipo) black(cor)*/
+            height: 100px;
+            width: 200px;
+        }
+        .div0 > p{
+            text-align: center;
+        }
+        .div0:hover{
+            background-color: black;
+        }
+        .div0:hover > p{
+            color: white;
+        }
+        /*O sinal > indica que a tag p é filha da tag div*/
+
+        #div1 > p{
+            display: none;
+        }
+        #div1:hover > p{
+            display: block;
+            background-color: aqua;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div0"><p>01</p></div>
+    <div class="div0"><p>02</p></div>
+    <div class="div0"><p>03</p></div>
+    <div id="div1"><h3>Passe o mouse aqui para descobrir oque são pseudo-elementos em CSS.</h1><p>Pseudo-elementos são estados da div. Ex: hover.</p></div>
+</body>
+</html>

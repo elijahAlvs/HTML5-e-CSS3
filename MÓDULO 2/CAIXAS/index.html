@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixas</title>
+    <style>
+        h1{
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(0, 0, 0);
+            /*Shorthand = border: 10px(tamanho) solid(estilo) black(cor); */
+
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            /*Shorthand = padding: 10px(top) 10px(right) 10px(bottom) 10px(left)
+            Se todos tiverem o msm tamanho, basta reduzir para: 
+            padding: 10px;*/
+            
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            /*margin: auto; Deixa o elemento centralizado.
+            Shorthand = margin: 10px(top) 10px(right) 10px(bottom) 10px(left)*/
+
+            outline-width: 5px ;
+            outline-style: dashed;
+            outline-color: blue;
+            /*Shorthand = outline: 5px(largura) dashed(estilo) blue(color)*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>Parágrafos também são exemplos de de box-leveçl, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
