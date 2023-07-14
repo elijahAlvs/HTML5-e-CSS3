@@ -5,41 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagens no Background</title>
     <style>
-        body{
-            /*Usar uma url do google também funciona*/
-            background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
-            /*background-size serve para delimitar o tamanho da imagem de fundo, sendo largura x altura*/
-            background-size: 100px 100px;
-            /*background-repeat sever para delimitar a repetição da imagem de funciona, ou seja, se eu utilizar a propriedade no-repeat, a imagem se repetirá apenas uma vez. Se eu utilizar a propriedade repeat-x ou repeat-y, a imagem se repetirá apenas horizontal ou verticalmente, respectivamente. Há muitas propriedades para background-repeat*/
-            background-repeat:repeat;
-        }
-    div.caixaQuadrada{
-        border: 1px solid black;
-        width: 300px;
-        height: 300px;
-        border-radius: 4px;
-        background-color: lightblue;
-        display: inline-block;
-    }    
-    div#q1{
-        background-color: aquamarine;
-    }
-    div#q2{
-        background-image: linear-gradient(to top, rgb(255, 153, 0), yellow);
-    }
-    div#q3{
-        /*Estrutura para inserir uma imagem como background, porém como ela é muito pequena, se repetiu várias vezes dentro da div.*/
-        background-image: url('assets/images/pattern003.png');
-    }
-    div#q4{
-        /*Pela imagem ser muito grande, mostrou apenas uma parte da imagem.*/
-        background-image: url(assets/images/wallpaper002.jpg);
-    }
-
-
-
-
-
     div.caixaQuadrada02{
         height: 400px;
         width: 400px;
@@ -49,7 +14,6 @@
         margin: 10px;
         background-image: url(assets/images/wallpaper003.jpg);
         background-repeat: no-repeat;
-        
     }
     div#engloba{
         max-width: 1350px;
@@ -84,19 +48,9 @@
     div#cq09{
         background-position: right bottom;        
     }
-
     </style>
 </head>
 <body>
-    
-        <div class="caixaQuadrada" id="q1">
-        </div>
-        <div class="caixaQuadrada" id="q2">
-        </div>
-        <div class="caixaQuadrada" id="q3">
-        </div>
-        <div class="caixaQuadrada" id="q4">
-        </div>
         <div id="engloba">
             <div id="leftDiv">
                 <div class="caixaQuadrada02" id="cq01">
