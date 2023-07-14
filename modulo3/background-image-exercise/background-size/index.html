@@ -11,18 +11,19 @@
             font-family: sans-serif;
         }
         body{
-            background-color: black;
             background-image: url(../assets/images/wallpaper002.jpg);
             background-repeat: no-repeat;
             background-position: center top;
+            /*background-size pode ser usado com 3 valores, auto = tamanho automatico da página /// contain = vai mostrar 100% da imagem mas vai tentar adaptar a tela (geralmente fica com cantos sem imagem. /// cover = faz cortes na imagem mas exibe na tela inteira. /// medidas = pode usar px, %, etc.., para exibir um tamanho fixo.*/
+            background-size: cover;
         }
         main{
             background-color: white;
             width: 480px;
-            margin: auto;
+            margin: 10px auto 0;
             border: 1px solid black;
             border-radius: 4px;
-            padding: 20px;
+            padding: 50px;
         }
     </style>
 </head>
