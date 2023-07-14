@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento de caixas vertical</title>
+    <style>
+        #container{
+            background: purple url('../background-image-exercise/assets/images/target001.png') no-repeat;
+            background-size: 100% 100%;
+            height: 500px;
+            padding: 10px;
+            position: relative;
+        }
+        #conteudo{
+            height: 200px;
+            width: 400px;
+            background: yellow url('../background-image-exercise/assets/images/target001.png') no-repeat;
+            background-size: 100% 100%;
+            /*margin: auto; é apenas para centralizar horizontalmente, ou seja, não centraliza na vertical.*/
+            /*position: absolute, vai possibilitar que dois comandos possam ser utilizados: left e top*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
