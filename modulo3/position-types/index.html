@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .allC{
+            background-color: blue;
+            width: 500px;
+            height: 500px;
+            margin: 0 0 50px;
+        }
+        .allB{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        .container{
+            /*position: static é o posicionamento padrão de um elemento. Nele não é possível usar os valores: top, right, bottom, left. Qualquer propriedade que nao seja o static pode usar os valores anteriores.*/
+            position: static;
+        }
+        .box{
+            position: static;
+        }
+
+        .container1{
+            /*com o position: fixed, o elemento fica fixo na tela*/
+            position: fixed;
+        }
+
+        .container2{
+            /*Quando a viewport passa por cima, o elemento fica fica enquanto scrolla. Quando volta para o início do scroll o elemento volta ao normal.*/
+            position: sticky;
+        }
+
+        .container3{
+            /*possibilita que o elemento filho com position absolute possa se referir a ele ao usar os valores: top, right, bottom e left. Caso o elemento pai nao possua position diferente de static, o elemento com position absolute vai se referir ao body do documento.*/
+            position: relative;
+        }
+        .box3{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container allC">
+        <div class="box allB"></div>
+    </div>
+
+    <div class="container1 allC">
+        <div class="box1 allB"></div>
+    </div>
+
+    <div class="container2 allC">
+        <div class="box2 allB"></div>
+    </div>
+
+    <div class="container3 allC">
+        <div class="box3 allB"></div>
+    </div>
+</body>
+</html>
