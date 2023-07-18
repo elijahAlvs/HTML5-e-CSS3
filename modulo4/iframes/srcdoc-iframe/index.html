@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Navigation</title>
+    <style>
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        iframe#screen{
+            width: 95vw;
+            height: 50vh;
+            box-shadow:inset 1px 1px 15px 4px #c0c0c0;
+            border: 1px solid rgba(0, 0, 0, 0.507);
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça sua escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia blanditiis cupiditate nesciunt quidem at in assumenda nobis totam quos, laboriosam facilis obcaecati voluptatibus aliquid provident illum ea nostrum fugiat adipisci.</p>
+    <ul>
+        <!--
+            target="frame" se refere ao "name" que foi atribuído ao iframe.
+        -->
+        <li><a href="pag01.html" target="frame">Primeira página</a></li>
+        <li><a href="pag02.html" target="frame">Segunda página</a></li>
+        <li><a href="pag03.html" target="frame">Terceira página</a></li>
+        <li><a href="pagBlank.html" target="frame">Zerar quadro</a></li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni veritatis quam blanditiis aperiam! Quasi corporis maiores laboriosam laborum distinctio modi. Quae doloribus quibusdam minima quod dolor vero fuga, accusantium dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo autem hic fugit voluptatibus, commodi quisquam odit nesciunt harum asperiores. Dolores velit unde vel provident amet debitis delectus atque? Perferendis, cupiditate!</p>
+    <!--
+        O "name" vai ser usado para indicar o target dos hyperlinks, para que as páginas locais possam ser exibidas dentro do iframe, ao invés de abrir uma nova página.
+    -->
+    <iframe  id="screen" name="frame" frameborder="1" srcdoc="<h1>SRCDOC</h1><p>Através do valor srcdoc='código', podemos criar um código que fique dentro do iframe.</p><img src='caminho/para/a/imagem.jpg'>">
+        [Seu navegador é incompatível com iframes.]
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores accusantium cum fugiat incidunt eum excepturi soluta blanditiis vero tenetur pariatur aliquam corrupti eveniet accusamus earum, nobis nostrum cumque molestias! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam eius provident ab repellat, porro suscipit similique quia quae accusamus debitis autem natus. Eligendi delectus, error officia autem numquam itaque consequuntur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error voluptatibus laudantium debitis veritatis. Sunt eius soluta ipsum dicta corrupti voluptas sequi laboriosam exercitationem ad repellat! Distinctio minus aliquid quasi voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, explicabo veritatis, ex nihil dolorum amet culpa repudiandae consequuntur officiis nobis eaque beatae praesentium fugiat sit voluptatem sequi necessitatibus fugit at!</p>
+</body>
+</html>

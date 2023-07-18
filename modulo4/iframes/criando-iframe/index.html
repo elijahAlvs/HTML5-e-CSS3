@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criando iframes</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        iframe{
+            width: 300px;
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
     <h1>Meu primeiro iframe</h1>
-    <p>Este é um iframe que me liga ao youtube <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe></p>
-    <!--iframes (inline frames) servem para mostrar um pedaço de outra página. frameborder serve para mostrar a borda-->
+    <p>Este é um iframe que me liga ao site <iframe src="https://www.cursoemvideo.com" frameborder="0"><a href="https://www.cursoemvideo.com">CursoemVídeo</a></iframe></p>
+    <!--
+         - iframes (inline frames) servem para mostrar um pedaço de outra página. 
+         - Frameborder serve para mostrar a borda. 
+         - Podemos usar a propriedade scolling="yes/ no" para dizer se pode ou não dar scroll.
+         - Tamanho padrão 300x150.
+         - Podemos escrever algo ou inserir links dentro da tag iframe, para que caso o navegador não seja compatível com a tecnologia, esses link / parágrafos venham ser executados.
+    -->
+
 </body>
 </html>

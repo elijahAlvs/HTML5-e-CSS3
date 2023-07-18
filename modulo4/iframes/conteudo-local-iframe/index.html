@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo local em iframe</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        iframe{
+            /*
+            Pelo iframe ser inline, eu apliquei o display block para que ele possa ser centralizado através do método "margin: auto;"
+            */
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conteúdo local em iframe</h1>
+    <h2>Aprendendo a inserir conteúdo local em iframe</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aspernatur, voluptatibus est perferendis deleniti officia voluptatum cum delectus voluptates, laudantium aliquid impedit earum consequatur laborum sunt quam quos, possimus fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, ab voluptas! Eos minima repellat aperiam adipisci labore earum consequuntur dolores. Vel voluptas vero magni veniam voluptatem eum animi, alias facere?</p>
+    <!--
+        É possível carregar páginas que eu criei dentro do iframe, só preciso indicar o caminho até o documento HTML.
+    -->
+    <iframe src="pag02.html" frameborder="0" height="500px" width="500px"><a href="https://gustavoguanabara.github.io">[Site CursoemVídeo]</a></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis eum, beatae id vel ipsam accusantium molestias incidunt quae modi, nulla quis repudiandae. Tempora sunt cupiditate commodi eos hic aliquam doloremque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, doloribus tempore blanditiis sequi sed dolores omnis molestiae nulla iusto adipisci minus! Libero sunt sed necessitatibus dolorem quam numquam asperiores impedit.</p>
+    
+</body>
+</html>
