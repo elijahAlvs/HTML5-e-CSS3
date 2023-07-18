@@ -4,11 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colgroup</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        table{
+            width: 600px;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        col.colNome{
+            background: rgb(218, 126, 126);
+        }
+        col.colSexoIdade{
+            background: #ecee60;
+        }
+        col.colProfissao{
+            background-color: rgb(143, 150, 240) ;
+        }
+    </style>
 </head>
 <body>
     <h1>Alinhando com colgroup</h1>
     <table>
-        
+        <!--Essa tag ajuda na hora de usar CSS em colunas, para que não tenha que botar classes em vários elementos. A ordem começa da primeira coluna da esquerda até a última na direita. Ex: a minha coluna se referirá do th Nome ao th profissão.-->
+        <colgroup>
+            <col class="colNome">
+            <!--span serve para selecionar a quantas colunas está se referindo-->
+            <col class="colSexoIdade" span="2">
+            <col class="colProfissao">
+        </colgroup>
+        <caption>
+            Aprendendo colgroup
+        </caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Yasmin</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Delilah</td>
+            <td>F</td>
+            <td>17</td>
+            <td>Estudante</td>
+        </tr>
+        <tr>
+            <td>Ana Júlia</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>Júlia</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Editora</td>
+        </tr>
     </table>
 </body>
 </html>

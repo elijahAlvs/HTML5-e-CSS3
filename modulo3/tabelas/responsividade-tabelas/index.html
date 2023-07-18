@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade com tabelas</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: darkgray;
+        }
+        div#container{
+            /*
+            overflow   - dois eixos
+            overflow-x - rolagem vertical
+            overflow-y - rolagem horizontal
+            */
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsividade com tabelas</h1>
+    <h2>Aprendendo a tornar tabelas responsivas</h2>
+    
+    <div id="container">
+        <table>
+            <caption>
+                Tabelas Responsivas
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Produtos</th>
+                    <th scope="col">Jan</th>
+                    <th scope="col">Fev</th>
+                    <th scope="col">Mar</th>
+                    <th scope="col">Abr</th>
+                    <th scope="col">Mai</th>
+                    <th scope="col">Jun</th>
+                    <th scope="col">Jul</th>
+                    <th scope="col">Ago</th>
+                    <th scope="col">Set</th>
+                    <th scope="col">Out</th>
+                    <th scope="col">Nov</th>
+                    <th scope="col">Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Notebook</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Frigideira</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Headset</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Monitor</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Microondas</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
