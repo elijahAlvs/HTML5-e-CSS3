@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.2em;
+            padding: 7px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        thead, tfoot{
+            background-color: darkgray;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        td.populacao{
+            text-align: right;
+        }
+        tfoot th{
+            text-align: left;
+        }
+        /*-------EFEITO-ZEBRADO-------------------------------------*/
+        /*A pseudo classe ":nth-child(2n)" se refere ao filho. 2n significa que a cada duas linhas ocorrerá a transformação, ou seja, na segunda linha. 
+        tbody tr:nth-child(2n){
+            background-color: black;
+            color: white;
+        }
+        */
+        /*odd = ímpar
+        even = par*/
+        tbody tr:nth-child(even){
+            background-color: black;
+            color: rgb(255, 248, 248);
+        }
+        tbody tr:nth-child(odd){
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com tabelas grandes</h1>
+    <!--A tag <table> cria uma tabela.
+        A tag <tr> cria uma linha de tabela.
+        A tag <td> cria um dado para a célula da tabela.
+
+    HIERARQUIA DE TABELAS SIMPLES:
+    TABLE = tabela
+        TABLE ROW = linha de tabela
+            TABLE HEADER = cabeçalho de tabela 
+                TABLE DATA = dados de tabela 
+
+    ANATOMIA DE TABELAS GRANDES:
+    TABLE
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <!--O caption vai ser tipo uma descrição da tabela-->
+        <caption>
+            População das Unidades Federativas
+        </caption>
+        <thead>
+            <tr>
+                <!--scope="col" ajuda ao navegador entender que os dados do títulos estão abaixo dele-->
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="populacao">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="populacao">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="populacao">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="populacao">14 873 064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="populacao">11 433 957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="populacao">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="populacao">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="populacao">9 132 078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="populacao">8 602 865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="populacao">7 164 788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="populacao">7 075 181</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="populacao">7 018 354</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="populacao">4 144 597</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="populacao">4 018 650</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="populacao">4 018 127</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="populacao">3 506 853</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="populacao">3 484 466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="populacao">3 337 357</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="populacao">3 273 227</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="populacao">3 015 268</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="populacao">2 778 986</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="populacao">2 298 696</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="populacao">1 777 225</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="populacao">1 572 866</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="populacao">881 935</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="populacao">845 731</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="populacao">605 761</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!--scope="row" ajuda ao navegador entender que os dados deste título <th> estão sendo inseridos em linha.-->
+                <th scope="row">Total de Habitantes</th>
+                <td class="populacao">210 147 125</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

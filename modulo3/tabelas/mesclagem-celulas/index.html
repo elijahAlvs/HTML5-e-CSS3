@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de células</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Praticando mesclagem de células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <!--colspan="2" serve para expandir a coluna em que está escrito B para ocupar 2 colunas, ou seja, de forma horizontal-->
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <!--Similar ao colspan, porém rowspan serve para expandir em linha, ou seja, de forma vertical.-->
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Tabela</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        table{
+            border: 1px solid black;
+            width: 400px;
+            /*border-collapse: collapse; junta as bordas. Valor padrão é separate.*/
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px dashed rgb(201, 8, 8);
+            padding: 8px;
+        }
+        tr.trImpar{
+            background-color: aquamarine;
+        }
+        tr.trPar{
+            background-color: chartreuse;
+        }
+        td.tdA{
+            color: rgb(132, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--A tag <table> cria uma tabela.
+        A tag <tr> cria uma linha de tabela.
+        A tag <td> cria um dado para a célula da tabela.
+
+    HIERARQUIA DE TABELAS SIMPLES:
+    TABLE = tabela
+        TABLE ROW = linha de tabela
+            TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dados de tabela
+    -->
+    <table>
+        <tr class="trImpar">
+            <td class="tdA">A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="trPar">
+            <td class="tdA">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="trImpar">
+            <td class="tdA">A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="trPar">
+            <td class="tdA">A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>
