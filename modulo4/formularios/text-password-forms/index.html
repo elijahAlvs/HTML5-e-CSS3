@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Mais informações de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!--
+            Type: text permite que escreva texto normal. password oculta os dígitos. submit cria um botão.
+
+            Required: torna obrigatório digitar algo no inputs para que o input submit possa funcionar.
+
+            Minlength: quantidade mínima de palavras para que o input submit possa funcionar.
+            Maxlength: quantidade máxima de palavras para que o input submit possa funcionar.
+
+            Placeholder: mesnsagem escrita dentro do input 
+
+            Autocomplete: dependendo do que eu botar, completa as informações com os dados do navegador, como senhas, emails, data de anivesário, etc.
+        -->
+        <p>
+            <label for="iusuario">Usuário: </label>
+            <input type="" name="nusuario" id="iusuario" required minlength="7" maxlength="13" placeholder="Digite seu usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="nsenha" id="isenha" required minlength="8" maxlength="16" placeholder="Digite sua senha" autocomplete="current-password">
+        </p>
+        <input type="submit" name="nsubmit" id="isubmit">
+    </form>
+</body>
+</html>

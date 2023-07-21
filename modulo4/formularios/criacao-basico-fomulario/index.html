@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário básico</title>
+</head>
+<body>
+    <h1>Formulário básico/iniciante</h1>
+    <!--Tudo que estiver dentro desta tag "form" será parte do formulário.
+
+    A propriedade da tag form "autocomplete" te da a opção de mostrar a barrinha com oque você já digitou em momentos anteriores.
+    
+    A propriedade "action" vai informar para onde esses dados serão enviados.
+    
+    A tag label vai etiquetar algo. Dentro de sua propriedade "for" podemos botar tanto o id como o name para identificar o elemento que ele está relacionado. A tag label vai ajudar o navegador correlacionar um elemento ao outro. Ex: no documento HTML atual, eu relacionei o parágrafo escrito nome com o input dele, note que apenas ao passar o mouse por cima do parágrafo escrito nome, o input ja muda a cor da borda.
+
+    Method: é o metodo em que o formulário é enviado. Há dois valores possíveis: get e post. Get é o valor padrão dos forms e ele permite que os dados do formulário sejam exibidos na url. O método post esconde esses dados da url, porém como não estão criptografados, esses dados ainda aparecem ao inspecionar a página.
+    -->
+    <form action="cadastro.php" autocomplete="off" method="get">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="Sobrenome" id="isobrenome">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+    
+</body>
+</html>
