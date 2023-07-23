@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form E-Mail e Telefone</title>
+</head>
+<body>
+    <h1>Fomrulário com E-mail e Telefone</h1>
+    <form action="cadastro.php" method="get">
+            <!--
+                fieldset - indica um campo de dados
+                legend - indica sobre oque é esse campo.
+            -->
+        <fieldset>
+            <legend>Dados pessoais</legend>
+             <!--<p> poderia ser substituído por uma <div>-->
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itelefone">Telefone</label>
+                <input type="tel" name="telefone" id="itelefone" required placeholder="(xx) xxxxx-xxxx">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetar">
+            </p>
+            <p>
+                Estudar sobre RegEx - Regular Expressions (Expressões regulares)
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
