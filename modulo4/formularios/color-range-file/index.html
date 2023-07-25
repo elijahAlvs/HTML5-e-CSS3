@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color, range & file</title>
+</head>
+<body>
+    <form action="redirecionamento.php" method="post" autocomplete="on">
+        <p>
+            <!--
+                value - decide a cor inicial, pré-selecionada pela página.
+            -->
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        <p>
+            <!--
+                min - valor mínimo que pode ser aplicado.
+                max - valor máximo que pode ser aplicado.
+                value - valor inicial da barra.
+
+                Ou seja, se min = 1 e max = 5, a barra do input range vai variar entre os valores 1 e 5. A barra também estará pré-selecionada no valor 1, por causa do value 1.
+            -->
+            <label for="isatisfaction">Nível de satisfação</label>
+            <input type="range" name="nivel" id="isatisfaction" min="1" max="5" value="1">
+        </p>
+        <p>
+            <!--
+                Para usar o file, é necessário que o formulário possua o método post, pois o url só suporta até 3000 bytes, por isso se usarmos o get, o url ficará muito grande. Também há a razão de que queremos que esse arquivo fique nos fundos do site, não na url.
+            -->
+            <label for="ifoto">Foto do perfil:</label>
+            <input type="file" name="Fotoif" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
+</body>
+</html>

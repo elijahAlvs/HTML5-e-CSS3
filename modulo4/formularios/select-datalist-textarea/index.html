@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="redirecionamento.php" method="post" autocomplete="on">
+        <p>
+            <!--
+                select - cria uma caixa que através da tag option, me permite selecionar uma opção.
+                option - cria uma opção, através do atributo selected, a opção se torna pré selecionada quando a página é carregada.
+                optgroup - cria um grupo com todas option dentro da tag, o label aqui se torna um atributo, que cria uma opção não clicável.
+            -->
+            <label for="iestado">Estado</label>
+            <select name="Estado" id="iestado">
+                <option value="" selected>----Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+        <!--
+            datalist - similar ao select, ao se juntar com o input:text, permite que mais opções sejam adicionadas pelo usuário ou oferece opções para que o usuário digite. Value não é obrigatório.
+        -->
+            <label for="iprofi">Profissão</label>
+            <input type="text" name="profi" id="iprofi" list="listProfissao">
+            <datalist id="listProfissao">
+                <option value="adm">Administrador</option>
+                <option value="cont">Contador</option>
+                <option value="dev">Desenvolvedor</option>
+                <option>Professor</option> 
+            </datalist>
+        </p>
+        <p>
+            <!--
+                textarea- cria uma caixa de texto redimensionável pelo próprio usuário.
+                cols - indica quantas colunas precisam para que ocorra a quebra de linha na caixa
+                rows - indica quantas linhas podem ser escritas até que a caixa precise descer para mostrar mais conteúdo.
+                Para o textarea, é necessário que o método da tag form seja post, porque assim que a informação ultrapasse 3000 bytes, ela será cortada, pois a url suporta apenas 3000 bytes. 
+            -->
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
+</body>
+</html>
