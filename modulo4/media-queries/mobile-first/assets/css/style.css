@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/*Versão mobile first*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background: black url(../../../mq-assets/images/back-phone.jpg) no-repeat;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.841);
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+img#phone{ display: block; }
+img#tablet{ display: none; }
+img#print{ display: none; }
+img#pc{ display: none; }
+img#tv{ display: none; }
+

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/*PAISAGEM*/
+
+body{
+    background-image: url("../../../mq-assets/images/cev-landscape.jpg");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

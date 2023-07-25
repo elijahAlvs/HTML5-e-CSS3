@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/*PORTRAIT*/
+
+body{
+    background-image: url("../../../mq-assets/images/cev-portrait.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+}
