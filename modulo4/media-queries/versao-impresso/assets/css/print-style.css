@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/*Estilo para impressoras*/
+
+*{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    line-height: 1.1em;
+}
+menu{
+    display: none;
+}
+
+article::after{
+    content: "Esse artigo foi impresso através de um site criado por @elias.alvslima";
+}
