@@ -1,2 +1,62 @@
 @charset "UTF-8";
 
+/*
+Typical Device Breakpoints
+--------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes Telas: acima de 1200px
+
+Nos comandos "@media" abaixo, eu não usei o do tamanho do celular, pois o site foi criado com a estrutura mobile first, ou seja, já foi construído com base no tamanho da tela de um celular.
+*/
+
+/*Impressão*/
+@media print{
+    body{
+        background-image: url(../../../mq-assets/images/back-tablet.jpg); /*Desnecessário, porque não da pra imprimir imagem/cor de fundo.*/
+    }
+    
+    img#phone{ display: none; }
+    img#tablet{ display: none; }
+    img#print{ display: block; }
+    img#pc{ display: none; }
+    img#tv{ display: none; }  
+}
+/*tablets*/
+@media screen and (min-width: 768px) and (max-width:992px){
+    body{
+        background-image: url(../../../mq-assets/images/back-tablet.jpg);
+    }
+    
+    img#phone{ display: none; }
+    img#tablet{ display: block; }
+    img#print{ display: none; }
+    img#pc{ display: none; }
+    img#tv{ display: none; }    
+}
+/*Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url(../../../mq-assets/images/back-pc.jpg);
+    }
+    
+    img#phone{ display: none; }
+    img#tablet{ display: none; }
+    img#print{ display: none; }
+    img#pc{ display: block; }
+    img#tv{ display: none; }  
+}
+/*Telas grandes*/
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../../../mq-assets/images/back-tv.jpg);
+    }
+    
+    img#phone{ display: none; }
+    img#tablet{ display: none; }
+    img#print{ display: none; }
+    img#pc{ display: none; }
+    img#tv{ display: block; }  
+}
