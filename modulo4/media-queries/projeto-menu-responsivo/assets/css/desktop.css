@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*
+Typical Device Breakpoints
+--------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes Telas: acima de 1200px
+
+Nos comandos "@media" abaixo, eu não usei o do tamanho do celular, pois o site foi criado com a estrutura mobile first, ou seja, já foi construído com base no tamanho da tela de um celular.
+*/
+
